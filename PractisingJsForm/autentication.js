@@ -9,4 +9,14 @@ form.addEventListener("submit", (event) => {
         alert("Password must be at least 10 characters long");
         event.preventDefault();
     }
+
+    if (age.value < 18) {
+        alert("You must be over 18 years old to submit this form");
+        event.preventDefault();
+    }
+    
+    if (name.value === "") {
+        alert("Name can not be empty");
+        event.preventDefault();
+    }
 });
